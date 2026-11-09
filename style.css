@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #eef1f2;
+}
+
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+    background: white;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.header {
+    background: black;
+    padding: 15px 20px;
+    overflow: hidden;
+}
+
+.header a {
+    color: lightblue;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+.header span {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.hero {
+    background: darkcyan;
+    color: white;
+    padding: 30px 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.devices {
+    background: black;
+    color: lightgrey;
+    padding: 15px 20px;
+    overflow: hidden;
+}
+
+.devices img {
+    float: left;
+    margin-right: 20px;
+}
+
+.devices p {
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.left {
+    width: 55%;
+    float: left;
+    padding: 20px;
+}
+
+.right {
+    width: 45%;
+    float: left;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+}
+
+h2 {
+    font-size: 17px;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 14px;
+    color: darkcyan;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 13px;
+    color: #444;
+}
+
+b {
+    display: block;
+    color: darkcyan;
+    margin: 10px 0 15px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: orangered;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media (max-width: 860px) {
+
+    .container {
+        width: 95%; 
+    }
+
+    .hero h1 {
+        font-size: 22px; 
+    }
+
+    .left {
+        width: 50%;
+        padding: 15px;
+    }
+
+    .right {
+        width: 50%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 100%;
+        border: none; 
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .header a {
+        display: inline-block;
+        margin: 4px 6px;
+    }
+
+    .header span {
+        float: none;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .hero {
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .hero h1 {
+        font-size: 18px;
+    }
+
+    .devices {
+        text-align: center;
+    }
+
+    .devices img {
+        float: none;
+        display: block;
+        margin: 0 auto 10px auto;
+        max-width: 100%;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        float: none;
+        border-left: none;
+        border-top: 1px solid #ccc;
+        padding: 15px;
+    }
+
+    .btn {
+        display: block;
+        text-align: center;
+    }
+}
